@@ -88,6 +88,7 @@
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "typescript": "^4.2.3"
+<<<<<<< HEAD
   },
   "bugs": {
     "url": "https://github.com/liujian10/redux-hook/issues"
@@ -97,4 +98,7 @@
     "lib": "lib"
   },
   "license": "ISC"
+=======
+  }
+>>>>>>> 52fc13d5f0ea8527e168e7fb9f3a7a7d66a1d4ae
 }
