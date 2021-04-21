@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
     "target": "es5",
-=======
-    "target": "esnext",
->>>>>>> 52fc13d5f0ea8527e168e7fb9f3a7a7d66a1d4ae
     "module": "esnext",
     "moduleResolution": "node",
     "jsx": "react-jsx",
@@ -30,11 +26,7 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-<<<<<<< HEAD
     "noEmit": false
-=======
-    "noEmit": true
->>>>>>> 52fc13d5f0ea8527e168e7fb9f3a7a7d66a1d4ae
   },
   "typeRoots": [
     "types/",
