@@ -1,8 +1,11 @@
 {
-  "name": "@sunl-fe/sfe-hook",
+  "name": "@sunl-fe/redux-hook",
   "description": "Use hooks realize redux in react",
   "version": "1.0.1",
-  "repository": "https://github.com/liujian10/redux-hook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liujian10/redux-hook.git"
+  },
   "keywords": [
     "react",
     "hook",
@@ -85,5 +88,13 @@
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
     "typescript": "^4.2.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/liujian10/redux-hook/issues"
+  },
+  "homepage": "https://github.com/liujian10/redux-hook#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "license": "ISC"
 }
