@@ -13,14 +13,14 @@
     "redux"
   ],
   "author": "mapleliu1@gmail.com",
-  "main": "lib/hooks/index.js",
-  "module": "esm/hooks/index.js",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
   "files": [
     "lib/",
     "esm/"
   ],
-  "types": "lib/hooks/index.d.ts",
-  "typings": "lib/hooks/index.d.ts",
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
   "scripts": {
     "start": "react-scripts start",
     "build:cjs": "tsc",
