@@ -9,7 +9,7 @@ const App = () => (
   <div className="App">
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
-      <div>React Hooks Library</div>
+      <div>redux hook</div>
     </header>
     <div className="App-card">
       <Counter />

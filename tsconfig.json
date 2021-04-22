@@ -26,7 +26,7 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false
+    "noEmit": true
   },
   "typeRoots": [
     "types/",
@@ -36,7 +36,5 @@
   "include": [
     "src/hooks/*.ts",
     "src/common/*.ts",
-    "src/hooks/connect.tsx",
-    "src/hooks/Provider.tsx"
   ]
 }

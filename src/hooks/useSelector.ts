@@ -1,8 +1,8 @@
 import { useContext, useMemo } from 'react'
-import { StateContext } from './Provider'
+import { StoreContext } from './Provider'
 
 const useSelector = (...funcs: Array<Function>) => {
-  const state = useContext(StateContext)
+  const state = useContext(StoreContext)
   const resultFunc: Function = useMemo(() => {
     if (funcs.length > 1) {
       return funcs.pop() || Function

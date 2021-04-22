@@ -1,7 +1,7 @@
 {
   "name": "@maple-rc/redux-hook",
   "description": "Use hooks realize redux in react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/liujian10/redux-hook.git"
@@ -92,7 +92,6 @@
   "bugs": {
     "url": "https://github.com/liujian10/redux-hook/issues"
   },
-  "homepage": "https://github.com/liujian10/redux-hook#readme",
   "directories": {
     "lib": "lib"
   },

@@ -1,28 +1,26 @@
 import { createContext, useReducer, Dispatch, ReactNode } from 'react'
-import combineReducers from './combineReducers'
 import { IAction } from './types'
 
 const initState: any = {}
 const initDispatch: Dispatch<IAction> = () => {}
 
-export const StateContext = createContext(initState)
+export const StoreContext = createContext(initState)
 export const DispatchContext = createContext(initDispatch)
 
 interface IProps {
   children: ReactNode
-  reducers: Object
+  reducer: any
   initState: Object
 }
 
 const Provider = (props: IProps) => {
-  const { children, reducers, initState } = props
+  const { children, reducer, initState } = props
 
-  const combinedReducer = combineReducers(reducers)
-  const [state, dispatch] = useReducer(combinedReducer, initState)
+  const [state, dispatch] = useReducer(reducer, initState)
   return (
-    <StateContext.Provider value={state}>
+    <StoreContext.Provider value={state}>
       <DispatchContext.Provider value={dispatch}>{children}</DispatchContext.Provider>
-    </StateContext.Provider>
+    </StoreContext.Provider>
   )
 }
 
