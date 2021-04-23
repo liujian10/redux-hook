@@ -93,6 +93,7 @@
   "bugs": {
     "url": "https://github.com/liujian10/redux-hook/issues"
   },
+  "homepage": "./",
   "directories": {
     "lib": "lib"
   },
