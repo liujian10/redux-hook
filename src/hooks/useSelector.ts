@@ -1,15 +1,16 @@
-import { useContext, useMemo } from 'react'
+import { useContext, useMemo, useRef } from 'react'
 import { StoreContext } from './Provider'
 
 const useSelector = (...funcs: Array<Function>) => {
   const state = useContext(StoreContext)
+  const funcsRef = useRef(funcs)
   const resultFunc: Function = useMemo(() => {
-    if (funcs.length > 1) {
-      return funcs.pop() || Function
+    if (funcsRef.current.length > 1) {
+      return funcsRef.current.pop() || Function
     }
     return (...v: Array<any>) => v[0]
-  }, [funcs])
-  const params = useMemo(() => funcs.map((func) => func(state)), [funcs, state])
+  }, [])
+  const params = useMemo(() => funcsRef.current.map((func) => func(state)), [state])
 
   return useMemo(() => resultFunc(...params), [resultFunc, params])
 }

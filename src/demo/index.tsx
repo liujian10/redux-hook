@@ -1,5 +1,5 @@
-import Counter from './Counter'
-import Todos from './Todos'
+import Counter from './components/Counter'
+import Todos from './components/Todos'
 
 import logo from '../image/logo.svg'
 

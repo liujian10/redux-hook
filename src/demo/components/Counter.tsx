@@ -1,7 +1,7 @@
 import { Dispatch } from 'react'
-import connect from '../hooks/connect'
-import { IAction } from '../hooks/types'
-import * as actions from './actions'
+import connect from '../../hooks/connect'
+import { IAction, IState } from '../../hooks/types'
+import * as actions from '../actions'
 
 interface IProps {
   count: number
@@ -24,4 +24,4 @@ const App = (props: IProps) => {
   )
 }
 
-export default connect((state) => state.counter)(App)
+export default connect((state: IState) => state.counter)(App)
