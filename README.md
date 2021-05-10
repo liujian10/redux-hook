@@ -41,8 +41,8 @@
 
 ```jsx
 
+import { Provider, combineReducers } from '@maple-rc/redux-hook'
 import Demo from './demo/index'
-import { Provider, combineReducers } from './hooks'
 
 import { reducers, initState } from './demo/reduces'
 
@@ -157,8 +157,7 @@ connect([selecter], [mergeProps])
 ```jsx
 
 import { Dispatch } from 'react'
-import connect from '../hooks/connect'
-import { IAction, IState } from '../hooks/types'
+import { connect, IAction, IState } from '@maple-rc/redux-hook'
 import * as actions from './actions'
 
 interface IProps {
@@ -172,7 +171,6 @@ interface IProps {
 }
 
 const Todos = (props: IProps) => {
-  // 用 useContext 来获取 state 与 dispatch
   const { todos, counter, dispatch } = props
   const change = (val: string) => dispatch(actions.changeText(val))
   const increment = () => dispatch(actions.increment(counter.count))

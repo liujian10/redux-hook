@@ -1,6 +1,5 @@
 import { Dispatch } from 'react'
-import connect from '../../hooks/connect'
-import { IAction, IState } from '../../hooks/types'
+import { connect, IAction, IState } from '../../hooks'
 import * as actions from '../actions'
 
 interface IProps {
