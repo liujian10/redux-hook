@@ -2,7 +2,7 @@
 
  [![npm version](https://img.shields.io/npm/v/@maple-rc/redux-hook.svg?style=flat)](https://www.npmjs.com/package/@maple-rc/redux-hook) [![Build Status](https://travis-ci.org/liujian10/redux-hook.svg?branch=master)](https://travis-ci.org/liujian10/redux-hook)
 
-Use hooks realize redux in react
+[Use hooks realize redux in react](https://github.com/liujian10/react-hooks-realize-redux)
 
 ---
 
